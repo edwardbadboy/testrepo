@@ -106,6 +106,7 @@ integration-test-aws:
 	ginkgo -v --failFast --focus=".*Core-test.*" test/integration/ -- -manifest-path=../../config/antrea-cloud.yml \
 	-preserve-setup-on-fail=true -cloud-provider=Aws
 
+# Test PR
 integration-test-azure:
 	ginkgo -v --failFast --focus=".*Extended-test-azure.*" test/integration/ -- \
         -manifest-path=../../config/antrea-cloud.yml -preserve-setup-on-fail=true -cloud-provider=Azure
